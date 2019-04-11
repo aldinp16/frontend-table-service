@@ -19,6 +19,10 @@
       v-if="roles('administrator')"
       :to="{ name: 'Menu' }"
       class="navbar-item">Menu</router-link>
+      <router-link
+      v-if="roles('administrator', 'owner')"
+      :to="{ name: 'Dashboard' }"
+      class="navbar-item">Dashboard</router-link>
 
       <div class="navbar-start">
         <div
