@@ -65,7 +65,7 @@ const router = new Router({
       component: UserRegister,
       meta: {
         requiresAuth: true,
-        roles: ['administrator', 'waiter', 'pelanggan']
+        roles: ['administrator', 'waiter', 'kasir']
       }
     },
     {
